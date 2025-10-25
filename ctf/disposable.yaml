@@ -1,0 +1,22 @@
+packages:
+- screen
+- vim
+- tcpdump
+- tshark
+
+write_files:
+- path: /usr/bin/build_env.sh
+  content: |
+    #! /usr/bin/env bash
+    
+    mkdir -p ~/src/repos
+    pushd  src/repos
+    git clone https://github.com/beefnog/my_env
+    cd my_env
+    ./my_env.py --target=linux
+    popd
+
+
+
+
+# vim: tabstop=2 expandtab shiftwidth=2 softtabstop=2
