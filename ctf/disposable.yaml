@@ -1,8 +1,13 @@
 packages:
+- build-essential
+- gdb
+- python3-pwntools
+- python3-pwntools-doc
+- radare2
 - screen
-- vim
 - tcpdump
 - tshark
+- vim
 
 write_files:
 - path: /usr/bin/build_env.sh
