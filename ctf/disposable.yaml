@@ -15,7 +15,7 @@ write_files:
     #! /usr/bin/env bash
     
     mkdir -p ~/src/repos
-    pushd  src/repos
+    pushd  ~/src/repos
     git clone https://github.com/beefnog/my_env
     cd my_env
     ./my_env.py --target=linux
